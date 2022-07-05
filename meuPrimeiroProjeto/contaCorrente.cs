@@ -1,6 +1,6 @@
 public class contaCorrente 
 {
-        public string Titular;
+        public string Titular; 
         public int Agencia;
         public int Numero; 
         public double Saldo;
@@ -14,10 +14,10 @@ public class contaCorrente
         }
 
         public bool Sacar(double valorSaque){
-                if (Saldo >= valorSaque){
-                    Saldo = Saldo - valorSaque;
-                    return true
+                if (this.Saldo >= valorSaque){
+                    this.Saldo = this.Saldo - valorSaque;
+                    return true;
                 }
-                    return false
+                    return false;
         }
 }
